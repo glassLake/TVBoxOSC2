@@ -94,7 +94,7 @@ function hideFileInfo() {
 }
 
 function listFile(path) {
-    $('#loadingToast').show();
+    //$('#loadingToast').show();
     $.get('/file/' + path, function (res) {
         let info = JSON.parse(res);
         let parent = info.parent;
